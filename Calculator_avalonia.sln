@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35514.174 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator_avalonia", "AvaloniaApplication2\Calculator_avalonia.csproj", "{DB58B9CE-4C69-497B-8370-B9EC18850293}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator_testing", "Calculator_testing\Calculator_testing.csproj", "{BC137ACE-6C67-4217-B056-AA818562811D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB58B9CE-4C69-497B-8370-B9EC18850293}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB58B9CE-4C69-497B-8370-B9EC18850293}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB58B9CE-4C69-497B-8370-B9EC18850293}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB58B9CE-4C69-497B-8370-B9EC18850293}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC137ACE-6C67-4217-B056-AA818562811D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC137ACE-6C67-4217-B056-AA818562811D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC137ACE-6C67-4217-B056-AA818562811D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC137ACE-6C67-4217-B056-AA818562811D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

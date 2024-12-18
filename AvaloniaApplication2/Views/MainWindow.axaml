@@ -1,0 +1,70 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:CalculatorApp.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="calc.Views.MainWindow"
+        x:DataType="vm:CalculatorViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="calc"
+		 Width="200"
+        Height="300"
+		 CanResize="False"
+		>
+	<Window.Styles>
+		<Style Selector="Button">
+			
+				<Setter Property="Margin" Value="2"/>
+				
+				<Setter Property="Foreground" Value="White"/>
+				<Setter Property="BorderBrush" Value="Black"/>
+		</Style>
+	</Window.Styles>
+
+	<Window.DataContext>
+		<vm:CalculatorViewModel/>
+	</Window.DataContext>
+	
+	<Grid>
+
+		<Image Source="/Assets/png.png" Stretch="Uniform" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Opacity="0.4"/>
+		<Grid>
+		
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
+
+		<!-- Поле ввода -->
+		<TextBox x:Name="Display" Text="" IsReadOnly="True" Grid.Row="0" Margin="5" FontSize="20" HorizontalAlignment="Stretch"/>
+
+
+		<!-- Кнопки -->
+		<UniformGrid Grid.Row="1" Columns="4" Rows="5" Margin="5">
+			<Button Content="7" Click="OnButtonClick"/>
+			<Button Content="8" Click="OnButtonClick"/>
+			<Button Content="9" Click="OnButtonClick"/>
+			<Button Content="/" Click="OnButtonClick"/>
+
+			<Button Content="4" Click="OnButtonClick"/>
+			<Button Content="5" Click="OnButtonClick"/>
+			<Button Content="6" Click="OnButtonClick"/>
+			<Button Content="*" Click="OnButtonClick"/>
+
+			<Button Content="1" Click="OnButtonClick"/>
+			<Button Content="2" Click="OnButtonClick"/>
+			<Button Content="3" Click="OnButtonClick"/>
+			<Button Content="-" Click="OnButtonClick"/>
+
+			<Button Content="0" Click="OnButtonClick"/>
+			<Button Content="," Click="OnButtonClick"/>
+
+			<Button Content="=" Click="OnButtonClick"/>
+			<Button Content="+" Click="OnButtonClick"/>
+			<Button Content="C" Click="OnButtonClick"/>
+		</UniformGrid>
+
+	</Grid>
+	</Grid>
+</Window>
